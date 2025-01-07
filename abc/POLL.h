@@ -2,7 +2,7 @@
 #define ABC_POLL_H
 
 #include <limits.h>
-#include <poll.h>
+#include <sys/poll.h>
 
 #include "INT.h"
 

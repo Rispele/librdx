@@ -37,9 +37,10 @@ VLT.c
 JDR.c
 JDR.rl.c
 ryu/d2s.c
+Exported.c
 )
 
-add_library(rdx STATIC ${RDX_HEADERS} ${RDX_SOURCES})
+add_library(rdx SHARED ${RDX_HEADERS} ${RDX_SOURCES})
 target_link_libraries(rdx abc sodium)
 
 add_executable(xq RDX.cli.c)
